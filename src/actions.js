@@ -9,18 +9,11 @@ export function addTodo(todo) {
 }
 
 export const COUNT_DOWN = 'COUNT_DOWN'
-export const COUNT_DOWN_DONE = 'COUNT_DOWN_DONE'
 export const COUNT_RESET = 'COUNT_RESET'
 
 export function countDown() {
   return {
     type: COUNT_DOWN
-  }
-}
-
-export function countDownDone() {
-  return {
-    type: COUNT_DOWN_DONE
   }
 }
 

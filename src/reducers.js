@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux'
-import {ADD_TODO, COUNT_DOWN, COUNT_DOWN_DONE, COUNT_RESET, COUNT_DOWN_START} from './actions'
+import {ADD_TODO, COUNT_DOWN, COUNT_RESET} from './actions'
 
 
 
@@ -40,11 +40,6 @@ function clock (state = clockInitialState, action) {
         minute: minute,
         second: second,
         runningType: runningType
-      }
-    case COUNT_DOWN_DONE:
-      return {
-        ...state,
-        runningType: 2
       }
     case COUNT_RESET:
       return clockInitialState
